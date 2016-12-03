@@ -1,0 +1,27 @@
+--- a/src/usi.cc	2016-06-06 02:02:30.000000000 +0900
++++ b/src/usi.cc	2016-11-28 09:00:49.908425704 +0900
+@@ -87,7 +87,11 @@
+   assert(thinking != nullptr);
+ 
+   // 標準入力から1行ずつ読み込む
+-  for (std::string command; std::getline(std::cin, command);) {
++  // http://yaneuraou.yaneu.com/2016/08/19/%E6%8A%80%E5%B7%A7%E3%82%92%E9%80%A3%E7%B6%9A%E8%87%AA%E5%B7%B1%E5%AF%BE%E6%88%A6%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%A7%E5%8B%95%E3%81%8B%E3%81%99/
++  for (std::string command; ;) {
++    if (!std::getline(std::cin, command))
++      command = "quit";
++
+     std::istringstream is(command);
+     std::string type;
+     is >> type;
+@@ -281,8 +285,10 @@
+     ExecuteCommand(command, &node, &usi_options, &thinking);
+ 
+     // quitコマンドの場合は、エンジンを終了する
+-    if (command == "quit") {
+-      break;
++    const char *pp = command.c_str();
++    if (pp != NULL && memcmp(pp, "quit", 4) == 0) {
++      if (strlen(pp) == 4
++        || (strlen(pp) >= 5 && (pp[4] == '\r' || pp[4] == '\n'))) break;
+     }
+   }

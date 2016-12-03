@@ -1,0 +1,12 @@
+us-east-1,米国東部（バージニア北部）,true,b,c,d,e
+us-east-2,米国東部（オハイオ）,true,a,b,c
+us-west-1,米国西部（北カリフォルニア）,true,b,c
+us-west-2,米国西部（オレゴン）,true,a,b,c
+eu-west-1,欧州（アイルランド）,true,a,b,c
+eu-central-1,欧州（フランクフルト）,false,a,b
+ap-northeast-1,アジアパシフィック（東京）,true,a,c
+ap-northeast-2,アジアパシフィック (ソウル),false,a,c
+ap-southeast-1,アジアパシフィック（シンガポール）,false,a,b
+ap-southeast-2,アジアパシフィック（シドニー）,false,a,b,c
+ap-south-1,アジアパシフィック (ムンバイ),false,a,b
+sa-east-1,南米 (サンパウロ),false,a,b,c

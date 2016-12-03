@@ -1,0 +1,18 @@
+* text=auto
+
+*.sln text eol=crlf
+*.csproj text eol=crlf
+*.cs text eol=crlf
+*.resx text eol=crlf
+*.filters text eol=crlf
+
+*.ini text eol=crlf
+*.txt text eol=crlf
+
+*.sh text eol=lf
+*.zsh text eol=lf
+
+*.ico -text
+*.png -text
+*.jpg -text
+

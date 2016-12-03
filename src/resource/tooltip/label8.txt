@@ -1,0 +1,2 @@
+インスタンス起動後にインストールされるエンジン(と評価関数)を選択します。
+resource\install_script.txt にて定義されていて、resource\setup.tar.gz 内の bootstrap.sh の起動パラメータとして渡されます。

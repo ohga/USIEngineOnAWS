@@ -1,0 +1,4 @@
+language: csharp
+solution: src/USIEngineOnAWS.sln
+script:
+  - MONO_IOMAP=case xbuild /p:Configuration=Release /tv:14.0 src/USIEngineOnAWS.sln

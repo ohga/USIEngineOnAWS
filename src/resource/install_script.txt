@@ -1,0 +1,15 @@
+
+# インストールエンジンコンボボックスの内容(csv)
+# エンジン名, 評価関数名 は bootstrap.sh のパラメータとして使用(そのまま engine/$2.sh, eval/$3.sh として実行される
+#
+# 名前, エンジン名, 評価関数名
+
+浮かむ瀬,ukamuse-sdt4-engine-1.0,ukamuse-sdt4-eval-1.0
+真やねうら王,shinyane-sdt4-engine-1.0,shinyane-eval-20161010
+†白美神†,tanuki-sdt4-engine-1.0,tanuki-sdt4-eval-1.0
+技巧(v1.0.1),gikou-engine-1.0.1,gikou-eval-1.0.1
+技巧(v1.0.1) 定跡120手(定跡、評価関数は公式),gikou-engine-BookMaxPly_70_0_120-1.0.1,gikou-eval-1.0.1
+魔女(v1.2) + 浮かむ瀬評価関数,silent_majority-engine-1.2,ukamuse-sdt4-eval-1.0
+魔女(v1.2) + 真やねうら王評価関数(20161010),silent_majority-engine-1.2,shinyane-eval-20161010
+魔女(v1.2) + 読み太(sdt4)評価関数,silent_majority-engine-1.2,yomita-sdt4-eval-1.0
+魔女(v1.2) + †白美神†評価関数,silent_majority-engine-1.2,tanuki-sdt4-eval-1.0
