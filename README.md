@@ -1,4 +1,5 @@
 これは [コンピュータ将棋 Advent Calendar 2016](http://www.adventar.org/calendars/1457) の 6 日目の記事です。  
+昨日は [@shiroi\_gohanp](https://twitter.com/shiroi_gohanp) さんの[ゴルーチンでお手軽持ち時間管理＆並行探索](http://qiita.com/32hiko/items/3be36dad2d651399ba1b)でした。
 
 # USI エンジン on AWS
 
