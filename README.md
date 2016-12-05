@@ -2,6 +2,12 @@
 昨日は [@shiroi\_gohanp](https://twitter.com/shiroi_gohanp) さんの[ゴルーチンでお手軽持ち時間管理＆並行探索](http://qiita.com/32hiko/items/3be36dad2d651399ba1b)でした。
 
 # USI エンジン on AWS
+ [![Build Status](https://travis-ci.org/ohga/USIEngineOnAWS.svg?branch=master)](https://travis-ci.org/ohga/USIEngineOnAWS)
+ [![Coverity Scan](https://scan.coverity.com/projects/11068/badge.svg)](https://scan.coverity.com/projects/ohga-usiengineonaws)
+ [![Build status](https://ci.appveyor.com/api/projects/status/o7mel4jof0bj7f6k/branch/master?svg=true)](https://ci.appveyor.com/project/ohga/usiengineonaws/branch/master)
+ [![License](https://img.shields.io/github/license/ohga/USIEngineOnAWS.svg?label=License&maxAge=86400)](https://github.com/ohga/USIEngineOnAWS/blob/master/LICENSE)
+ [![Release](https://img.shields.io/github/release/ohga/USIEngineOnAWS.svg?label=Release&maxAge=60)](https://github.com/ohga/USIEngineOnAWS/releases)
+
 
 これは [@HiraokaTakuya](https://twitter.com/HiraokaTakuya) 氏の[発言](https://twitter.com/HiraokaTakuya/status/792187555735216129)の実装の一つで AWS の[スポットインスタンス](http://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/using-spot-instances.html)上に将棋エンジンを作成し、将棋所や ShogiGUI 等のエンジンとして登録することができる実行ファイルを用意する Windows 用のツールです。 
 
