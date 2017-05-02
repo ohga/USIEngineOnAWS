@@ -540,6 +540,10 @@ namespace USIEngineOnAWS
                 var query_req = new DescribeImagesRequest();
                 query_req.Filters.Add(new Filter() { Name = "name", Values = new List<string>() { "*/images/*/ubuntu-*-16.04-*" } });
                 query_req.Filters.Add(new Filter() { Name = "virtualization-type", Values = new List<string>() { vm_type } });
+                if(vm_type == "hvm")
+                {
+                    query_req.Filters.Add(new Filter() { Name = "root-device-type", Values = new List<string>() { "ebs" } });
+                }
                 var query_res = client.DescribeImages(query_req);
                 Amazon.EC2.Model.Image[] images = query_res.Images.ToArray();
                 images = images.OrderByDescending(n => n.CreationDate).ToArray();
